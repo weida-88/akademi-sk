@@ -4,7 +4,7 @@ A sleek, secure, and responsive web chat platform with real-time messaging, user
 
 > ⚡️ **Note:** This project was built 90% using AI prompting with **Claude Sonnet 3.7**, demonstrating the power of AI-assisted development.
 
-![Akademi SK Chat Screenshot](https://your-screenshot-url-here.png)
+
 
 ---
 
