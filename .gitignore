@@ -1,0 +1,90 @@
+# Akademi SK Chat Application .gitignore
+
+# Configuration files with sensitive information
+config/db.php
+*.env
+.env
+.env.local
+.env.*.local
+
+# User uploaded content
+/uploads/
+/uploads/chat/*
+/uploads/profile/*
+!uploads/chat/.gitkeep
+!uploads/profile/.gitkeep
+
+# Log files
+*.log
+logs/
+log/
+error_log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Session files
+/sessions/
+sess_*
+
+# Cache files
+cache/
+*.cache
+
+# Backup files
+*.bak
+*.backup
+*~
+*.swp
+
+# Dependency directories
+/vendor/
+/node_modules/
+
+# Composer files
+composer.phar
+/vendor/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.komodoproject
+.komodotools/
+nbproject/
+.buildpath
+.classpath
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache
+
+# PHP-CS-Fixer
+/.php_cs
+/.php_cs.cache
+/.php-cs-fixer.cache
+
+# Miscellaneous
+*.zip
+*.rar
+*.tar
+*.gz
+*.sql
+*.tar.gz
+*.7z

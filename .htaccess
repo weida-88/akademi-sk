@@ -1,0 +1,17 @@
+# Main .htaccess file in the root folder
+Options -Indexes
+
+# Prevent access to sensitive files
+<FilesMatch "^(db\.php|config\.php|\.env|\.git)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protect uploads folder from executing PHP files
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Protect uploaded PHP files from being executed
+    RewriteCond %{REQUEST_URI} ^/uploads/.*\.php$
+    RewriteRule .* - [F,L]
+</IfModule>
